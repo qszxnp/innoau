@@ -3,7 +3,6 @@ const products = [
     id: 1,
     name: 'Worker Accommodation',
     description: 'Affordable and durable container homes perfect for worker accommodation and construction sites.',
-    price: '30,000 - 50,000 RMB',
     features: [
       'Durable construction',
       'Basic amenities',
@@ -16,7 +15,6 @@ const products = [
     id: 2,
     name: 'Commercial Space',
     description: 'Versatile container units ideal for offices, shops, and commercial applications.',
-    price: '30,000 - 50,000 RMB',
     features: [
       'Flexible layout',
       'Modern design',
@@ -29,7 +27,6 @@ const products = [
     id: 3,
     name: 'Luxury Modular Home',
     description: 'High-end container homes with premium finishes and modern amenities.',
-    price: '350,000 RMB',
     features: [
       'Premium materials',
       'Full amenities',
@@ -61,10 +58,6 @@ export default function Products() {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-x-4 text-xs">
-                  <span className="text-gray-500">Base Price (excluding shipping)</span>
-                  <span className="text-blue-600 font-semibold">{product.price}</span>
-                </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900">
                     {product.name}
@@ -85,7 +78,7 @@ export default function Products() {
                 </div>
                 <div className="mt-6">
                   <a
-                    href="/contact"
+                    href="#contact"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
                   >
                     Request Quote
